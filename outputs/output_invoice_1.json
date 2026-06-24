@@ -1,0 +1,128 @@
+{
+  "invoice_number": "BPXINV-00550",
+  "invoice_date": "23-05-2021",
+  "due_date": "22-06-2021",
+  "billed_by": "Bioplex",
+  "billed_to": "Roger Bigot",
+  "line_items": [
+    {
+      "item": "Dextromethorphan polistirex",
+      "amount": "124.50"
+    },
+    {
+      "item": "Venlafaxine Hydrochloride",
+      "amount": "400.00"
+    },
+    {
+      "item": "Metoclopramide Hydrochloride (BPXPO-00537)",
+      "amount": "249.75"
+    },
+    {
+      "item": "Avobenzone, octinoxate (BPXPO-00538)",
+      "amount": "44.50"
+    },
+    {
+      "item": "Verapamil hydrochloride",
+      "amount": "78.90"
+    },
+    {
+      "item": "Tiagabine hydrochloride",
+      "amount": "153.75"
+    },
+    {
+      "item": "Ziprasidone hydrochloride (BPXPO-00537)",
+      "amount": "349.90"
+    },
+    {
+      "item": "Risperidone",
+      "amount": "349.90"
+    },
+    {
+      "item": "Metoprolol succinate",
+      "amount": "349.90"
+    },
+    {
+      "item": "Acetaminophen",
+      "amount": "349.90"
+    },
+    {
+      "item": "Sorafenib",
+      "amount": "240.00"
+    },
+    {
+      "item": "Telmisartan",
+      "amount": "149.85"
+    },
+    {
+      "item": "Famotidine",
+      "amount": "66.75"
+    },
+    {
+      "item": "Methylphenidate Hydrochloride",
+      "amount": "118.35"
+    },
+    {
+      "item": "Ibuprofen (BPXPO-00538)",
+      "amount": "99.00"
+    },
+    {
+      "item": "Metformin Hydrochloride (BPXPO-00538)",
+      "amount": "32.25"
+    },
+    {
+      "item": "Avobenzone, Octisalate and Octocrylene",
+      "amount": "254.85"
+    },
+    {
+      "item": "Carisoprodol",
+      "amount": "349.90"
+    },
+    {
+      "item": "Losartan Potassium",
+      "amount": "349.90"
+    },
+    {
+      "item": "Pentazocine Hydrochloride and Naloxone Hydrochloride",
+      "amount": "349.90"
+    },
+    {
+      "item": "Omeprazole",
+      "amount": "249.75"
+    },
+    {
+      "item": "Losartan Potassium",
+      "amount": "111.25"
+    },
+    {
+      "item": "Saline",
+      "amount": "78.90"
+    },
+    {
+      "item": "Titanium dioxide",
+      "amount": "256.25"
+    },
+    {
+      "item": "Bicalutamide (BPXPO-00538)",
+      "amount": "53.75"
+    },
+    {
+      "item": "Ampicillin sodium",
+      "amount": "254.85"
+    },
+    {
+      "item": "Octinoxate, Titanium Dioxide, Octisalate",
+      "amount": "186.75"
+    },
+    {
+      "item": "Cavia porcellus hair and cavia porcellus skin",
+      "amount": "311.25"
+    }
+  ],
+  "subtotal": "5964.50",
+  "discount": null,
+  "tax_or_gst": "596.45",
+  "total_amount": "6610.95",
+  "currency": null,
+  "payment_method": null,
+  "notes": "Make all checks payable to Bioplex"
+}

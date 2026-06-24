@@ -1,0 +1,20 @@
+{
+  "invoice_number": "INV-3337",
+  "invoice_date": "25-01-2016",
+  "due_date": "31-01-2016",
+  "billed_by": "DEMO - Sliced Invoices",
+  "billed_to": "Test Business",
+  "line_items": [
+    {
+      "item": "Web Design",
+      "amount": "$85.00"
+    }
+  ],
+  "subtotal": "$85.00",
+  "discount": null,
+  "tax_or_gst": "$8.50",
+  "total_amount": "$93.50",
+  "currency": "USD",
+  "payment_method": "ANZ Bank",
+  "notes": "Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month."
+}

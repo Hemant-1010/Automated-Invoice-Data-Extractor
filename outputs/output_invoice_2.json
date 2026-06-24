@@ -1,0 +1,56 @@
+{
+  "invoice_number": "1213",
+  "invoice_date": "16-12-2021",
+  "due_date": "15-01-2022",
+  "billed_by": "Zencorporations",
+  "billed_to": "La Galerie",
+  "line_items": [
+    {
+      "item": "Glossostigma",
+      "amount": "29.70"
+    },
+    {
+      "item": "Bayberry",
+      "amount": "1,207.68"
+    },
+    {
+      "item": "Waxflower",
+      "amount": "56.78"
+    },
+    {
+      "item": "Carolina Geranium",
+      "amount": "187.65"
+    },
+    {
+      "item": "Smooth Solomon's Seal",
+      "amount": "14.91"
+    },
+    {
+      "item": "El Yunque Colorado",
+      "amount": "229.31"
+    },
+    {
+      "item": "Queen Anne's Lace",
+      "amount": "193.60"
+    },
+    {
+      "item": "Alaskan Douglasia",
+      "amount": "531.92"
+    },
+    {
+      "item": "Deer Sedge",
+      "amount": "87.86"
+    },
+    {
+      "item": "Indian Tobacco",
+      "amount": "14.50"
+    }
+  ],
+  "subtotal": "2553.91",
+  "discount": null,
+  "tax_or_gst": "255.39",
+  "total_amount": "2809.30",
+  "currency": "EUR",
+  "payment_method": null,
+  "notes": "Thank you for your business!"
+}
