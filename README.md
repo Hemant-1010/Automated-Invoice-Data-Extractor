@@ -56,6 +56,15 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
+| Package | Version | Purpose |
+|---------|---------|---------|
+| pdfplumber | 0.10.3+ | PDF text extraction |
+| Genai | 1.3.0+ | Gemini API client |
+| python-dotenv | 1.0.0+ | Load .env environment variables | 
+
+# Or manually
+pip install pdfplumber openai python-dotenv
+
 ### 3. Setup API Key
 
 Create a '.env' file in the root directory:
@@ -357,7 +366,6 @@ Notes:              Make all checks payable to Bioplex
 - Comments above each major section
 - Meaningful variable names
 
----
 
 ##  Testing
 
@@ -376,22 +384,5 @@ Each test verifies:
 -  Output saves correctly
 
 
-##  Requirements
 
-| Package | Version | Purpose |
-|---------|---------|---------|
-| pdfplumber | 0.10.3+ | PDF text extraction |
-| Genai | 1.3.0+ | Gemini API client |
-| python-dotenv | 1.0.0+ | Load .env environment variables |
-
----
-
-## 📄 Dependencies Installation
-
-bash
-# Using requirements.txt (recommended)
-pip install -r requirements.txt
-
-# Or manually
-pip install pdfplumber openai python-dotenv
 
