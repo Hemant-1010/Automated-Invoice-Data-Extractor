@@ -153,184 +153,47 @@ Each function is clearly separated:
 
 ### Console Output
 
-EXTRACTED DATA FROM: 1.pdf
+EXTRACTED DATA FROM: 3.pdf
 ------------------------------------------
-
-
-Invoice Number:     BPXINV-00550
-Invoice Date:       23-05-2021
-Due Date:           22-06-2021
-Billed By:          Bioplex
-Billed To:          Roger Bigot
+Invoice Number:     INV-3337
+Invoice Date:       25-01-2016
+Due Date:           31-01-2016
+Billed By:          DEMO - Sliced Invoices
+Billed To:          Test Business
 
 Line Items:
-  1. Dextromethorphan polistirex: 124.50
-  2. Venlafaxine Hydrochloride: 400.00
-  3. Metoclopramide Hydrochloride (BPXPO-00537): 249.75
-  4. Avobenzone, octinoxate (BPXPO-00538): 44.50
-  5. Verapamil hydrochloride: 78.90
-  6. Tiagabine hydrochloride: 153.75
-  7. Ziprasidone hydrochloride (BPXPO-00537): 349.90
-  8. Risperidone: 349.90
-  9. Metoprolol succinate: 349.90
-  10. Acetaminophen: 349.90
-  11. Sorafenib: 240.00
-  12. Telmisartan: 149.85
-  13. Famotidine: 66.75
-  14. Methylphenidate Hydrochloride: 118.35
-  15. Ibuprofen (BPXPO-00538): 99.00
-  16. Metformin Hydrochloride (BPXPO-00538): 32.25
-  17. Avobenzone, Octisalate and Octocrylene: 254.85
-  18. Carisoprodol: 349.90
-  19. Losartan Potassium: 349.90
-  20. Pentazocine Hydrochloride and Naloxone Hydrochloride: 349.90
-  21. Omeprazole: 249.75
-  22. Losartan Potassium: 111.25
-  23. Saline: 78.90
-  24. Titanium dioxide: 256.25
-  25. Bicalutamide (BPXPO-00538): 53.75
-  26. Ampicillin sodium: 254.85
-  27. Octinoxate, Titanium Dioxide, Octisalate: 186.75
-  28. Cavia porcellus hair and cavia porcellus skin: 311.25
+  1. Web Design: $85.00
 
-Subtotal:           5964.50
+Subtotal:           $85.00
 Discount:           None
-Tax/GST:            596.45
-Total Amount:       6610.95
+Tax/GST:            $8.50
+Total Amount:       $93.50
 
-Currency:           None
-Payment Method:     None
-Notes:              Make all checks payable to Bioplex
+Currency:           USD
+Payment Method:     ANZ Bank
+Notes:              Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
 -------------------------------------------------
 
-## JSON Output (output_invoice_1.json)
+## JSON Output (output_invoice_3.json)
 {
-  "invoice_number": "BPXINV-00550",
-  "invoice_date": "23-05-2021",
-  "due_date": "22-06-2021",
-  "billed_by": "Bioplex",
-  "billed_to": "Roger Bigot",
+  "invoice_number": "INV-3337",
+  "invoice_date": "25-01-2016",
+  "due_date": "31-01-2016",
+  "billed_by": "DEMO - Sliced Invoices",
+  "billed_to": "Test Business",
   "line_items": [
     {
-     "item": "Dextromethorphan polistirex",
-      "amount": "124.50"
-    },
-    {
-      "item": "Venlafaxine Hydrochloride",
-      "amount": "400.00"
-    },
-    {
-      "item": "Metoclopramide Hydrochloride (BPXPO-00537)",
-      "amount": "249.75"
-    },
-    {
-      "item": "Avobenzone, octinoxate (BPXPO-00538)",
-      "amount": "44.50"
-    },
-    {
-      "item": "Verapamil hydrochloride",
-      "amount": "78.90"
-    },
-    {
-      "item": "Tiagabine hydrochloride",
-      "amount": "153.75"
-    },
-    {
-      "item": "Ziprasidone hydrochloride (BPXPO-00537)",
-      "amount": "349.90"
-    },
-    {
-      "item": "Risperidone",
-      "amount": "349.90"
-    },
-    {
-      "item": "Metoprolol succinate",
-      "amount": "349.90"
-    },
-    {
-      "item": "Acetaminophen",
-      "amount": "349.90"
-    },
-    {
-      "item": "Sorafenib",
-      "amount": "240.00"
-    },
-    {
-      "item": "Telmisartan",
-      "amount": "149.85"
-    },
-    {
-      "item": "Famotidine",
-      "amount": "66.75"
-    },
-    {
-      "item": "Methylphenidate Hydrochloride",
-      "amount": "118.35"
-    },
-    {
-      "item": "Ibuprofen (BPXPO-00538)",
-      "amount": "99.00"
-    },
-    {
-      "item": "Metformin Hydrochloride (BPXPO-00538)",
-      "amount": "32.25"
-    },
-    {
-      "item": "Avobenzone, Octisalate and Octocrylene",
-      "amount": "254.85"
-    },
-    {
-      "item": "Carisoprodol",
-      "amount": "349.90"
-    },
-    {
-      "item": "Losartan Potassium",
-      "amount": "349.90"
-    },
-    {
-      "item": "Pentazocine Hydrochloride and Naloxone Hydrochloride",
-      "amount": "349.90"
-    },
-    {
-      "item": "Omeprazole",
-      "amount": "249.75"
-    },
-    {
-      "item": "Losartan Potassium",
-      "amount": "111.25"
-    },
-    {
-      "item": "Saline",
-      "amount": "78.90"
-    },
-    {
-      "item": "Titanium dioxide",
-      "amount": "256.25"
-    },
-    {
-      "item": "Bicalutamide (BPXPO-00538)",
-      "amount": "53.75"
-    },
-    {
-      "item": "Ampicillin sodium",
-      "amount": "254.85"
-    },
-    {
-      "item": "Octinoxate, Titanium Dioxide, Octisalate",
-      "amount": "186.75"
-    },
-    {
-      "item": "Cavia porcellus hair and cavia porcellus skin",
-      "amount": "311.25"
+      "item": "Web Design",
+      "amount": "$85.00"
     }
   ],
-  "subtotal": "5964.50",
+  "subtotal": "$85.00",
   "discount": null,
-  "tax_or_gst": "596.45",
-  "total_amount": "6610.95",
-  "currency": null,
-  "payment_method": null,
-  "notes": "Make all checks payable to Bioplex"
+  "tax_or_gst": "$8.50",
+  "total_amount": "$93.50",
+  "currency": "USD",
+  "payment_method": "ANZ Bank",
+  "notes": "Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month."
 }
 
 
