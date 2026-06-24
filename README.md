@@ -46,7 +46,7 @@ The pipeline extracts all of the following fields from each invoice:
 2. Installation
 
 # Clone the repository
-- git clone https://github.com/Hemant-1010/Automated-Invoice-Data-Extractor.git
+- git clone https://github.com/Hemant-1010/Automated-Invoice-Data-Extractor.git 
 - cd Automated-Invoice-Data-Extractor
 
 # Create a virtual environment (optional but recommended)
