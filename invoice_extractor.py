@@ -14,7 +14,7 @@ try:
         api_key = next(line.split("=")[1].strip() for line in f if "GEMINI_API_KEY=" in line)
     
     client = genai.Client(api_key=api_key)
-    print("✅ API Key successfully loaded!")
+    print("API Key successfully loaded!")
 
 except (FileNotFoundError, StopIteration):
     raise ValueError(f"CRITICAL ERROR: Missing .env file or GEMINI_API_KEY not found at: {env_path}")
