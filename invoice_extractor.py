@@ -96,7 +96,7 @@ def extract_invoice_data(cleaned_text):
             model='gemini-3.1-flash-lite',
             contents=full_prompt,
             config=types.GenerateContentConfig(
-                temperature=0,  
+                temperature=0,  # Set to 0 for deterministic output
                 response_mime_type="application/json", 
             )
         )
@@ -107,7 +107,7 @@ def extract_invoice_data(cleaned_text):
         
     except Exception as e:
         error_msg = str(e)
-        print(f"❌ ERROR: API call failed - {error_msg}")   # If anything goes wrong (503, 429, etc.), print the exact error and stop instantly
+        print(f"ERROR: API call failed - {error_msg}") 
         return None
     
 
@@ -119,16 +119,18 @@ def display_extracted_data(extracted_data, invoice_path):
         print("No data to display.")
         return
     
-    print("\n" + "="*70)
+    print("\n")
     print(f"EXTRACTED DATA FROM: {os.path.basename(invoice_path)}")
-    print("="*70)
-    
+    print("-"*70)
+
+    # Core Metadata Fields
     print(f"\nInvoice Number:     {extracted_data.get('invoice_number')}")
     print(f"Invoice Date:       {extracted_data.get('invoice_date')}")
     print(f"Due Date:           {extracted_data.get('due_date')}")
     print(f"Billed By:          {extracted_data.get('billed_by')}")
     print(f"Billed To:          {extracted_data.get('billed_to')}")
-    
+
+    # Line Item Array Parser Loop
     print(f"\nLine Items:")
     line_items = extracted_data.get('line_items', [])
     if line_items and isinstance(line_items, list):
@@ -138,7 +140,8 @@ def display_extracted_data(extracted_data, invoice_path):
             print(f"  {idx}. {item_desc}: {item_amount}")
     else:
         print(f"  {line_items}")
-    
+        
+    # Totals and Bookkeeping Summary
     print(f"\nSubtotal:           {extracted_data.get('subtotal')}")
     print(f"Discount:           {extracted_data.get('discount')}")
     print(f"Tax/GST:            {extracted_data.get('tax_or_gst')}")
@@ -155,27 +158,32 @@ def display_extracted_data(extracted_data, invoice_path):
 def process_invoice(pdf_path, output_json_path=None):
     
     print(f"\n Processing invoice: {pdf_path}")
-    
+
+    # Step 1: Read text from target file
     print("Loading PDF and extracting text...")
     raw_text = extract_text_from_pdf(pdf_path)
     
     if not raw_text:
         print("Failed to extract text from PDF")
         return None
-    
+
+    # Step 2: Clean the messy formatting layout
     print("Cleaning and preprocessing text...")
     cleaned_text = clean_text(raw_text)
-    
+
+    # Step 3: Run the structured extraction via Gemini API
     print("Calling Gemini API for data extraction...")
     extracted_data = extract_invoice_data(cleaned_text)
     
     if not extracted_data:
         print("Failed to extract data")
         return None
-    
+
+    # Step 4: Display clean outputs in terminal console window
     print("Extraction successful!")
     display_extracted_data(extracted_data, pdf_path)
     
+    # Step 5: If output directory parameter is given, write structured JSON to disc 
     if output_json_path:
         try:
             os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
@@ -193,17 +201,17 @@ if __name__ == "__main__":
     
     invoices =[ 
         {
-            "pdf_path": "1.pdf",
+            "pdf_path": "1.pdf", # Target test invoice file
             "output_json": "outputs/output_invoice_1.json"
         },
 
         {
-            "pdf_path": "2.pdf",
+            "pdf_path": "2.pdf", # Target test invoice file
             "output_json": "outputs/output_invoice_2.json"
         },
 
         {
-            "pdf_path": "3.pdf",
+            "pdf_path": "3.pdf", # Target test invoice file
             "output_json": "outputs/output_invoice_3.json"
         },
     ]
