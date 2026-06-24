@@ -49,9 +49,10 @@ The pipeline extracts all of the following fields from each invoice:
 - git clone https://github.com/Hemant-1010/Automated-Invoice-Data-Extractor.git 
 - cd Automated-Invoice-Data-Extractor
 
-# Create a virtual environment (optional but recommended)
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Create a virtual environmen
+python3 -m venv
+source venv/bin/activate  
+-On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -151,7 +152,7 @@ Each function is clearly separated:
 
 ##  Sample Output
 
-### Console Output
+# Console Output
 
 EXTRACTED DATA FROM: 3.pdf
 ------------------------------------------
@@ -174,7 +175,7 @@ Payment Method:     ANZ Bank
 Notes:              Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
 -------------------------------------------------
 
-## JSON Output (output_invoice_3.json)
+# JSON Output (output_invoice_3.json)
 {
   "invoice_number": "INV-3337",
   "invoice_date": "25-01-2016",
